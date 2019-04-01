@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.UplodeReportsActivty">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/docterdetails"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/back_white"
+                android:drawableLeft="@drawable/back_white"
+                android:fontFamily="@font/ralewaymedium"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:gravity="left|center"
+                android:text="Upload Your Reports Images"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@color/white"
+                    android:scrollbars="horizontal" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_capture"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_photo_camera" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Add Picture"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <HorizontalScrollView
+                    android:id="@+id/order_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@color/white"
+                    android:fillViewport="false"
+                    android:foregroundGravity="left">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/selected_photos_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="start"
+                            android:layout_toEndOf="@+id/lin_capture"
+                            android:layout_toRightOf="@+id/lin_capture"
+                            android:animateLayoutChanges="true"
+                            android:gravity="start"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            tools:ignore="NotSibling">
+
+
+                            <!-- images will be added dynamicall to this layout -->
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+
+                <Button
+                    android:id="@+id/SubmitImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="25dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

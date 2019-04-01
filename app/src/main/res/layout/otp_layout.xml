@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:focusable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="none"
+            android:autofillHints="@null"
+            android:fontFamily="@font/ralewaymedium"
+            android:inputType="textFilter|textMultiLine"
+            android:text="Enter OTP"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ralewaymedium"
+            android:gravity="center"
+            android:text="Enter the  OTP below in case if we fail to detect the SMS automatically " />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/first"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+               android:autoText="false"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:inputType="number|textNoSuggestions|textVisiblePassword"
+                android:maxLength="1"
+                android:text="">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/Second"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/Third"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/Fourth"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:maxLength="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ralewaymedium"
+                android:text="Didn't receive the OTP?" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/Sendaallinfo"
+                android:visibility="gone"
+                android:fontFamily="@font/ralewaymedium"
+                android:text="Didn't receive the OTP?" />
+
+
+
+            <TextView
+                android:id="@+id/resendotp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ralewaymedium"
+                android:text="Resend OTP"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

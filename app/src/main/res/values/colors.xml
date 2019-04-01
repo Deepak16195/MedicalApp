@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#969393</color>
+    <color name="colorAccent">#ED2d2d</color>
+    <color name="lightgray">#DCDCDC</color>
+    <color name="White">#FFF</color>
+    <color name="Signin_button">#4683C4</color>
+    <color name="Green">#006400</color>
+    <color name="Light_Green">#4ca54c</color>
+    <color name="black">#000</color>
+    <color name="bg_main">#001e47</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="faqs">#FF7B7676</color>
+    <color name="btncolor">#4998D2</color>
+    <color name="btncolorFantasy">#00bfff</color>
+    <color name="textback">#ED2d2d</color>
+    <color name="doctext">#7B7875</color>
+    <color name="docbutton">#C91A1A</color>
+    <color name="docterdetails">#FFC91C1C</color>
+    <color name="cobalt">#84A6D6</color>
+    <color name="Buttoncolor">#37000000</color>
+
+
+
+
+</resources>

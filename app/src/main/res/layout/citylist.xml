@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="1dp"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:id="@+id/profile_image"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="85dp"-->
+                    <!--android:layout_gravity="bottom|center_horizontal"-->
+                    <!--android:src="@drawable/powerw" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:lines="1"
+                            android:id="@+id/Cattype"
+                            android:padding="10dp"
+                            android:text="Deepak Jaiswal"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+
+
+                        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/Doctors"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            card_view:cardBackgroundColor="@color/white"
+                            card_view:cardElevation="5dp"
+                            card_view:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:padding="15dp"
+                                    android:tag="image_tag"
+                                    app:srcCompat="@drawable/doctors" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/ralewaymedium"
+                                        android:gravity="left"
+                                        android:textStyle="bold"
+                                        android:text="Book"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@color/textback"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/ralewaymedium"
+                                        android:gravity="left"
+                                        android:text="Doctors"
+                                        android:textStyle="bold"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textColor="@color/textback"
+                                        android:textSize="15dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

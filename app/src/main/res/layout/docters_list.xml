@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardElevation="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="2dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_home_profile_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user"
+                    app:civ_border_color="#FF35C88B"
+                    app:civ_border_width="2dp" />
+
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/Reating"
+                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="2.6" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/Doctername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:paddingLeft="5dp"
+                            android:textStyle="bold"
+                            android:text="Dr. Shreyas Shah"
+                            android:textSize="14dp" />
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/Address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:maxLines="2"
+                            android:paddingLeft="5dp"
+                            android:text="Dr. Shreyas Shah"
+                            android:textColor="@color/doctext"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/Gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:maxLines="2"
+                            android:paddingLeft="5dp"
+                            android:text="Gender"
+                            android:textColor="@color/doctext"
+                            android:textSize="14dp" />
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/Exprience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:maxLines="2"
+                            android:paddingLeft="5dp"
+                            android:text="Exprience"
+                            android:textColor="@color/doctext"
+                            android:textSize="14dp" />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/Specilist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:maxLines="2"
+                            android:paddingLeft="5dp"
+                            android:text="Specilist in."
+                            android:textColor="@color/doctext"
+                            android:textSize="14dp" />
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/Booknow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/docbutton"
+                android:fontFamily="@font/ralewaymedium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="BOOK NOW"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/Docter_Time"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundlinenoradus"
+                android:fontFamily="@font/ralewaymedium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:paddingRight="10dp"
+                android:text="120"
+                android:textColor="@color/textback"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/readmore"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/docbutton"
+                android:fontFamily="@font/ralewaymedium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="READ MORE"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "482846434145",
+    "firebase_url": "https://mydocter-fe567.firebaseio.com",
+    "project_id": "mydocter-fe567",
+    "storage_bucket": "mydocter-fe567.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482846434145:android:7b3e3cdb064816ce",
+        "android_client_info": {
+          "package_name": "com.rdavepatient.soft.meetdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482846434145-a80r07rg5qg9c4p4ckkh1q2gli33rf8n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rdavepatient.soft.meetdoctor",
+            "certificate_hash": "a2382561a9117bedb35b1073d6f29ce1066f3867"
+          }
+        },
+        {
+          "client_id": "482846434145-o9oaoft38lpu5213tp8amk762t1v50mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8E354ie05nGSkIbeTXQoXWYcxu8hByoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482846434145-o9oaoft38lpu5213tp8amk762t1v50mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

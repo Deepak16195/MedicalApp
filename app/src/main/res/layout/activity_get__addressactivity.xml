@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Get_Addressactivity">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/docterdetails"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:onClick="back"
+                        android:background="@color/docterdetails"
+                        app:srcCompat="@drawable/back_white" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="4.5"
+                        android:id="@+id/SelectedAddreess"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:gravity="left|center"
+                        android:text="Your Address"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".2"
+                    android:visibility="gone"
+                    android:gravity="center">
+
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:id="@+id/logout"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@color/textback"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/power" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:weightSum="5"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp">
+
+                <SearchView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="4.8"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/getFullAddreessFormGoogle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@drawable/gps"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/Cityname"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

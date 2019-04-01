@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+android:layoutDirection="locale"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:yourapp="http://schemas.android.com/tools">
+
+<item
+    android:id="@+id/navigation_home"
+    android:icon="@drawable/home"
+    app:actionLayout="@layout/custom_action_item_layout"
+    android:title="@string/Home"/>
+<!--<item
+    android:id="@+id/navigation_Reminders"
+    android:icon="@drawable/reminders"
+    android:visible="false"
+    app:actionLayout="@layout/custom_action_item_layout"
+    android:title="Reminders" />-->
+<item
+    android:id="@+id/navigation_dashboard"
+    android:icon="@drawable/report"
+    app:actionLayout="@layout/custom_action_item_layout"
+    android:title="Report" />
+
+<item
+    android:id="@+id/navigation_notifications"
+    android:icon="@drawable/notification"
+    app:actionLayout="@layout/custom_action_item_layout"
+    android:title="@string/title_notifications" />
+
+<item
+    android:id="@+id/navigation_Account"
+    android:icon="@drawable/account"
+    android:title="Account" />
+
+</menu>

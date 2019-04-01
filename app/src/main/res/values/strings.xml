@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My Doctor</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="family_member_list">Family Member List</string>
+    <string name="CreateOne">Don’t have an account?<u>Create One</u> </string>
+    <string name="Login">Already have an account?<u>Login</u> </string>
+    <string name="rupee">\u20B9 </string>
+    <string name="currency">@string/rupee</string>
+
+    <string-array name="array_blood_group">
+        <item>Blood Group</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+
+    <!--      Permission Message    -->
+    <string name="permission_read_external_storage">Permission to read files is required</string>
+    <string name="permission_write_external_storage">Permission to write files is required</string>
+    <string name="permission_camera_access">Permission to access camera is required</string>
+    <string name="permission_send_sms">Permission to send SMS is required</string>
+    <string name="permission_receive_sms">Permission to receive SMS is required</string>
+    <string name="permission_read_sms">Permission to read SMS is required</string>
+    <string name="permission_read_phone_state">Permission to read phone is required</string>
+
+
+</resources>
