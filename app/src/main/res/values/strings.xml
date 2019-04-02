@@ -16,7 +16,6 @@
     <string name="currency">@string/rupee</string>
 
     <string-array name="array_blood_group">
-        <item>Blood Group</item>
         <item>O+</item>
         <item>O-</item>
         <item>A+</item>

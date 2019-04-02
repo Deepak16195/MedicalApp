@@ -50,6 +50,7 @@ public class AddFamilymemberActivty extends AppCompatActivity implements View.On
     public static String bdaydate;
     String postid="";
     int pos;
+    int position=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +71,32 @@ public class AddFamilymemberActivty extends AppCompatActivity implements View.On
             bdaydate =familyListAdapter.list.get(pos).getDOB();
             Mobile.setText(familyListAdapter.list.get(pos).getMobileNo()+"");
             Relation.setText(familyListAdapter.list.get(pos).getRelation()+"");
-            spBloodGroup.setSelection(2);
+            String bloodgrop = familyListAdapter.list.get(pos).getBloodGrop();
+            if (bloodgrop.equals("O+")) {
+                position = 0;
+            }
+            if (bloodgrop.equals("O-")) {
+                position = 1;
+            }
+            if (bloodgrop.equals("A+")) {
+                position = 2;
+            }
+            if (bloodgrop.equals("A-")) {
+                position = 3;
+            }
+            if (bloodgrop.equals("B+")) {
+                position = 4;
+            }
+            if (bloodgrop.equals("B-")) {
+                position = 5;
+            }
+            if (bloodgrop.equals("AB+")) {
+                position = 6;
+            }
+            if (bloodgrop.equals("AB-")) {
+                position = 7;
+            }
+            spBloodGroup.setSelection(position);
             NextButton.setVisibility(View.GONE);
             UpdateButton.setVisibility(View.VISIBLE);
         }
@@ -239,8 +265,6 @@ public class AddFamilymemberActivty extends AppCompatActivity implements View.On
                             return;
                         }
                         if (data.getStatus() == 200) {
-
-
                             Intent i = new Intent(getApplication(), FamilymemberList.class);
                             startActivity(i);
                             AddFamilymemberActivty.this.finish();

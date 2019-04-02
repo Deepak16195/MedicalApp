@@ -126,7 +126,7 @@ public class ProfileSetting extends AppCompatActivity {
         String myFormat = "dd/MMM/yyyy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
         bdaydate = sdf.format(myCalendar.getTime());
-        BirthdayPicker.setText("Birthday  " + sdf.format(myCalendar.getTime()));
+        BirthdayPicker.setText("" + sdf.format(myCalendar.getTime()));
     }
 
     public void back(View view) {
@@ -182,28 +182,28 @@ public class ProfileSetting extends AppCompatActivity {
                             }
 
                             if (bloodgrop.equals("O+")) {
-                                position = 1;
+                                position = 0;
                             }
                             if (bloodgrop.equals("O-")) {
-                                position = 2;
+                                position = 1;
                             }
                             if (bloodgrop.equals("A+")) {
-                                position = 3;
+                                position = 2;
                             }
                             if (bloodgrop.equals("A-")) {
-                                position = 4;
+                                position = 3;
                             }
                             if (bloodgrop.equals("B+")) {
-                                position = 5;
+                                position = 4;
                             }
                             if (bloodgrop.equals("B-")) {
-                                position = 6;
+                                position = 5;
                             }
                             if (bloodgrop.equals("AB+")) {
-                                position = 7;
+                                position = 6;
                             }
                             if (bloodgrop.equals("AB-")) {
-                                position = 8;
+                                position = 7;
                             }
                             spBloodGroup.setSelection(position);
                         }
@@ -237,7 +237,6 @@ public class ProfileSetting extends AppCompatActivity {
     @OnClick(R.id.NextButton)
     public void onViewClicked() {
 
-        if (PermissionUtility.checkPermissionReadPhoneAndReadSMS(ProfileSetting.this)) {
             if (CheckInternet.isConnectingToInternet(getApplicationContext())) {
                 if (checkValidation()) {
                     String Gender;
@@ -259,8 +258,6 @@ public class ProfileSetting extends AppCompatActivity {
             } else {
                 Utils.customMessage(ProfileSetting.this, "No Network Available");
             }
-        }
-
 
     }
 

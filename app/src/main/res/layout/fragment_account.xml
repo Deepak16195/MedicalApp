@@ -168,7 +168,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_weight="9"
                     android:fontFamily="@font/ralewaymedium"
-                    android:text="Ratings &amp; Reviews"
+                    android:text="Ratings"
                     android:textColor="@color/black"
                     android:textSize="15dp" />
 
